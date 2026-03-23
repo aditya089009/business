@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDK Cine Cafe - Umred, Nagpur | Food • Games • Cinema</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-bg {
+            background-image: url('https://via.placeholder.com/1920x1080/FF6B35/FFFFFF?text=SDK+Cine+Cafe+Hero');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .food-bg {
+            background-image: url('https://via.placeholder.com/1920x1000/8B4513/FFFFFF?text=Food+Court');
+            background-size: cover;
+            background-position: center;
+        }
+        .game-bg {
+            background-image: url('https://via.placeholder.com/1920x1000/0D1117/00FFFF?text=Game+Zone');
+            background-size: cover;
+            background-position: center;
+        }
+        .cinema-bg {
+            background-image: url('https://via.placeholder.com/1920x1000/8B0000/FFD700?text=Cinema+Hall');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glassmorphism border-b border-white/20 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-film text-2xl text-orange-400"></i>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+                        SDK Cine Cafe
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#food" class="hover:text-orange-400 transition-all duration-300 font-medium">Food Court</a>
+                    <a href="#games" class="hover:text-orange-400 transition-all duration-300 font-medium">Game Zone</a>
+                    <a href="#cinema" class="hover:text-orange-400 transition-all duration-300 font-medium">Cinema</a>
+                    <a href="#location" class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 px-6 py-2 rounded-full font-semibold transition-all duration-300">
+                        Book Tickets
+                    </a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="glassmorphism max-w-4xl mx-auto p-12 rounded-3xl text-center relative z-10 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-white to-orange-200 bg-clip-text text-transparent leading-tight">
+                SDK Cine Cafe
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-12 opacity-90 max-w-2xl mx-auto leading-relaxed">
+                Where Flavor Meets Film
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#food" class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 px-10 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                    Explore Food Court
+                </a>
+                <a href="#cinema" class="border-2 border-white/30 hover:border-white/60 px-10 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm hover:bg-white/10">
+                    Book Cinema Tickets
+                </a>
+            </div>
+            <p class="mt-8 text-sm opacity-75 font-light">Plot No. 1, 2, & 3, Giradkar Layout, Bypass Road, Umred, Nagpur</p>
+        </div>
+    </section>
+
+    <!-- Food Court Section -->
+    <section id="food" class="food-bg py-32 relative">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 bg-clip-text text-transparent">
+                    Food Court
+                </h2>
+                <p class="text-xl md:text-2xl font-light mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
+                    Indulge in gourmet snacks and artisanal coffee in our premium cafe culture destination. 
+                    Perfect for pre-movie bites or casual hangouts with friends.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+                    <div class="glassmorphism p-8 rounded-3xl backdrop-blur-xl">
+                        <i class="fas fa-coffee text-4xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Artisanal Brews</h3>
+                        <p class="opacity-90">Craft coffees roasted to perfection</p>
+                    </div>
+                    <div class="glassmorphism p-8 rounded-3xl backdrop-blur-xl">
+                        <i class="fas fa-utensils text-4xl text-orange-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Gourmet Snacks</h3>
+                        <p class="opacity-90">Quick bites with premium flavors</p>
+                    </div>
+                </div>
+                <button onclick="openModal('foodModal')" class="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 px-12 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                    View More <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Zone Section -->
+    <section id="games" class="game-bg py-32 relative">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Game Zone
+                </h2>
+                <p class="text-xl md:text-2xl font-light mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
+                    Enter the future of gaming with cutting-edge VR and high-performance rigs. 
+                    Compete like a pro in our esports-ready arena.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+                    <div class="glassmorphism p-8 rounded-3xl backdrop-blur-xl">
+                        <i class="fas fa-vr-cardboard text-4xl text-cyan-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">VR Immersion</h3>
+                        <p class="opacity-90">Next-gen virtual reality</p>
+                    </div>
+                    <div class="glassmorphism p-8 rounded-3xl backdrop-blur-xl">
+                        <i class="fas fa-gamepad text-4xl text-purple-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Pro Gaming</h3>
+                        <p class="opacity-90">Tournament-grade setups</p>
+                    </div>
+                </div>
+                <button onclick="openModal('gameModal')" class="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 px-12 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                    View More <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cinema Section -->
+    <section id="cinema" class="cinema-bg py-32 relative">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-red-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                    Chhotu Maharaj Cinema
+                </h2>
+                <p class="text-xl md:text-2xl font-light mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
+                    Luxury cinematic experience with Dolby sound and plush recliner seating. 
+                    Elevate your movie nights to premium perfection.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+                    <div class="glassmorphism p-8 rounded-3xl backdrop-blur-xl">
+                        <i class="fas fa-chair text-4xl text-red-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Luxury Recliners</h3>
+                        <p class="opacity-90">Plush velvet seating</p>
+                    </div>
+                    <div class="glassmorphism p-8 rounded-3xl backdrop-blur-xl">
+                        <i class="fas fa-volume-up text-4xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Dolby Sound</h3>
+                        <p class="opacity-90">Immersive audio experience</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="openModal('cinemaModal')" class="bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-600 hover:to-yellow-600 px-12 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                        View More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <a href="https://in.bookmyshow.com/cinemas/umred/chhotu-maharaj-umred-nagpur/buytickets/CUDN/20260323" target="_blank" class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 px-12 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                        Book Tickets Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-32 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+                Visit Us
+            </h2>
+            <div class="glassmorphism max-w-2xl mx-auto p-12 rounded-3xl">
+                <p class="text-xl mb-8 opacity-90">
+                    Plot No. 1, 2, and 3, Giradkar Layout, Bypass Road, Umred, Nagpur
+                </p>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <i class="fas fa-clock text-3xl text-orange-400 mb-2"></i>
+                        <p>Open 10 AM - 11 PM</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone text-3xl text-orange-400 mb-2"></i>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt text-3xl text-orange-400 mb-2"></i>
+                        <p>Umred, Nagpur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Food Modal -->
+    <div id="foodModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glassmorphism max-w-2xl w-full mx-4 rounded-3xl p-12 backdrop-blur-xl animate-scale-in">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-3xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                    Food Court
+                </h3>
+                <button onclick="closeModal('foodModal')" class="text-2xl hover:text-orange-400 transition-colors">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p class="text-xl leading-relaxed opacity-95 mb-8">
+                Savor the taste of excellence. From artisanal brews to gourmet quick-bites, our food court is designed for the modern foodie. Whether it's a pre-movie snack or a relaxed coffee date, we serve perfection in every cup.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fas fa-coffee text-2xl text-yellow-400 mb-2"></i>
+                    <span>Coffee Bar</span>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fas fa-cookie-bite text-2xl text-orange-400 mb-2"></i>
+                    <span>Gourmet Pastries</span>
+                </div>
+            </div>
+            <button onclick="closeModal('foodModal')" class="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 py-4 rounded-2xl font-bold text-lg transition-all duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glassmorphism max-w-2xl w-full mx-4 rounded-3xl p-12 backdrop-blur-xl animate-scale-in">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-3xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    Game Zone
+                </h3>
+                <button onclick="closeModal('gameModal')" class="text-2xl hover:text-cyan-400 transition-colors">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p class="text-xl leading-relaxed opacity-95 mb-8">
+                Step into the future. Our elite Game Zone features the latest in VR technology and high-performance gaming rigs. Compete, play, and win in an environment built for champions.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-gradient-to-br from-cyan-500/20 to-purple-500/20 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fas fa-vr-cardboard text-2xl text-cyan-400 mb-2"></i>
+                    <span>VR Stations</span>
+                </div>
+                <div class="bg-gradient-to-br from-cyan-500/20 to-purple-500/20 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fas fa-desktop text-2xl text-purple-400 mb-2"></i>
+                    <span>Gaming PCs</span>
+                </div>
+            </div>
+            <button onclick="closeModal('gameModal')" class="w-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 py-4 rounded-2xl font-bold text-lg transition-all duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Cinema Modal -->
+    <div id="
